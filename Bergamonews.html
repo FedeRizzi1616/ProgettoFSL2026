@@ -1,0 +1,280 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#002c59",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#001b3c",
+                    "primary-fixed-dim": "#ffb3b1",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#574141",
+                    "on-primary-fixed": "#410008",
+                    "tertiary": "#001835",
+                    "surface-bright": "#fff8f7",
+                    "outline-variant": "#debfbe",
+                    "tertiary-fixed-dim": "#a8c8fe",
+                    "inverse-on-surface": "#ffedeb",
+                    "tertiary-fixed": "#d5e3ff",
+                    "surface-variant": "#f3dedd",
+                    "on-primary-container": "#eb6b6d",
+                    "secondary-fixed": "#e0e3e5",
+                    "secondary-container": "#e0e3e5",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#f3dedd",
+                    "secondary-fixed-dim": "#c4c7c9",
+                    "on-error-container": "#93000a",
+                    "background": "#fff8f7",
+                    "surface-container-high": "#f9e3e2",
+                    "on-background": "#241918",
+                    "outline": "#8a7170",
+                    "primary": "#390006",
+                    "on-secondary-container": "#626567",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#444749",
+                    "inverse-surface": "#3a2d2d",
+                    "bordeaux-primary": "#600010",
+                    "surface-container": "#ffe9e8",
+                    "on-tertiary-container": "#7595c8",
+                    "text-body": "#475569",
+                    "primary-fixed": "#ffdad8",
+                    "surface-container-lowest": "#ffffff",
+                    "text-heading": "#0F172A",
+                    "surface-tint": "#a6383d",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#fff0ef",
+                    "on-surface": "#241918",
+                    "inverse-primary": "#ffb3b1",
+                    "border-subtle": "#E2E8F0",
+                    "on-secondary-fixed": "#191c1e",
+                    "surface": "#fff8f7",
+                    "primary-container": "#600010",
+                    "on-tertiary-fixed-variant": "#254775",
+                    "secondary": "#5c5f61",
+                    "surface-white": "#FFFFFF",
+                    "surface-muted": "#F8FAFC",
+                    "surface-dim": "#ead5d4",
+                    "on-primary-fixed-variant": "#862027"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "grid-gutter": "1.5rem",
+                    "card-padding": "2rem",
+                    "section-gap": "8rem",
+                    "container-max": "1120px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Geist"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Geist"],
+                    "headline-lg": ["Geist"],
+                    "display-hero": ["Geist"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-hero": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bordeaux-gradient {
+            background: linear-gradient(135deg, #600010 0%, #390006 100%);
+        }
+        .glass-card {
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-bordeaux-primary selection:text-white">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 backdrop-blur-md border-b border-secondary-fixed dark:border-outline-variant bg-surface/80 dark:bg-surface/80">
+<div class="max-w-[1120px] mx-auto px-6 flex justify-between items-center h-20">
+<a class="font-headline-md text-headline-md font-bold text-bordeaux-primary dark:text-inverse-primary" href="#">
+                Portfolio Tecnico
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-secondary dark:text-secondary-fixed-dim font-body-md hover:text-bordeaux-primary transition-colors duration-150" href="#">Home</a>
+<a class="text-bordeaux-primary dark:text-inverse-primary font-bold border-b-2 border-bordeaux-primary pb-1" href="#">Esperienze</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-body-md hover:text-bordeaux-primary transition-colors duration-150" href="#">Competenze</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-body-md hover:text-bordeaux-primary transition-colors duration-150" href="#">Contatti</a>
+<a class="ml-4 px-6 py-2 bg-bordeaux-primary text-white font-label-sm text-label-sm hover:opacity-90 transition-all duration-200" href="#">Curriculum Vitae</a>
+</div>
+<button class="md:hidden text-bordeaux-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="max-w-[1120px] mx-auto px-6">
+<!-- Hero Section -->
+<header class="pt-16 pb-12 md:pt-24 md:pb-20">
+<div class="flex flex-col gap-4 mb-6">
+<div class="flex items-center gap-2 text-bordeaux-primary">
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Luglio 2024 (1 Settimana)</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-text-heading leading-tight max-w-4xl">
+                    Esperienza Professionale - Bergamonews S.r.l.
+                </h1>
+</div>
+<p class="font-body-lg text-body-lg text-text-body max-w-2xl">
+                Un percorso di formazione giornalistica nel cuore dell'editoria digitale, esplorando le dinamiche redazionali e la gestione di un quotidiano online d'avanguardia.
+            </p>
+</header>
+<!-- Project Overview & Sidebar Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-section-gap">
+<!-- Main Content Area -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Hero Image Placeholder -->
+<div class="aspect-video w-full bg-slate-200 overflow-hidden rounded-lg group border border-slate-200">
+<img alt="Redazione Bergamonews" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A modern, high-tech digital newsroom interior with multiple professional workstations featuring large dual monitors. The environment is clean and brightly lit with cool-toned architectural lighting that highlights the minimalist corporate design. In the background, large screens display real-time web analytics and news tickers. The overall aesthetic is professional, sophisticated, and fast-paced, utilizing a palette of deep navy and crisp whites with subtle bordeaux-red accents in the furniture details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvIwOwbRrt5Ala6wwch_-HQdMvnk1gVtRKbbhU7anQZs8pZEQi-gL2u7OqSKjK_meblvWwvmOcvbQLRd3BcTz6TY51lAM1cqqJJIAUv6dEaD1Al4eZJXdHncwtUpKSDZgAEAtBA5sNvdgy5c0jPbyEgr_fCbJBUpdjAKSjhJNyYK2eyy6JXulNXnNj41v3-5TkLbZDQwjrN_lVj6SBER115pzM34Giuu0DmRMx0j-1lUUpusZm-pB6EIqjhp0PfoBYyrfwQieaIOQ">
+</div>
+<section class="space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-text-heading border-l-4 border-bordeaux-primary pl-4">Descrizione dell'esperienza</h2>
+<div class="space-y-4 text-text-body font-body-md leading-relaxed">
+<p class="">
+                            Il Percorso per le Competenze Trasversali e per l'Orientamento (PCTO) svolto presso Bergamonews S.r.l. ha rappresentato un'immersione totale nel mondo del giornalismo contemporaneo. In una realtà dinamica e radicata nel territorio, ho avuto l'opportunità unica di osservare dall'interno i flussi di lavoro di una redazione digitale.
+                        </p>
+<p class="">
+                            Durante la settimana, ho potuto approfondire non solo le tecniche di scrittura giornalistica ottimizzata per il web (SEO writing), ma anche i complessi meccanismi di gestione di un giornale online.</p>
+<p class="">
+                            L'esperienza mi ha permesso di partecipare attivamente alle riunioni di redazione, dove vengono decise le linee editoriali e monitorate le performance dei contenuti in tempo reale, offrendomi una visione a 360 gradi sull'editoria digitale moderna.
+                        </p>
+</div>
+</section>
+</div>
+<!-- Sidebar -->
+<aside class="lg:col-span-4 space-y-8">
+<div class="p-8 bg-surface-container-low border border-slate-200 rounded-lg sticky top-32">
+<h3 class="font-headline-md text-headline-md text-text-heading mb-6">Dettagli Chiave</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="p-2 bg-bordeaux-primary/10 rounded">
+<span class="material-symbols-outlined text-bordeaux-primary" data-icon="groups">groups</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase">Team</p>
+<p class="font-body-md text-on-surface font-semibold">Redazione Giornalistica</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-2 bg-bordeaux-primary/10 rounded">
+<span class="material-symbols-outlined text-bordeaux-primary" data-icon="business">business</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase">Partner</p>
+<p class="font-body-md text-on-surface font-semibold">Bergamonews S.r.l.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-2 bg-bordeaux-primary/10 rounded">
+<span class="material-symbols-outlined text-bordeaux-primary" data-icon="ads_click">ads_click</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase">Focus</p>
+<p class="font-body-md text-on-surface font-semibold">Editoria Digitale &amp; Comunicazione</p>
+</div>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-200">
+
+<div class="flex items-center gap-3">
+
+
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- Skills Grid Section -->
+<section class="mb-section-gap">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div class="space-y-2">
+<h2 class="font-headline-lg text-headline-lg text-text-heading">Competenze Sviluppate</h2>
+<p class="font-body-md text-text-body">Le abilità trasversali consolidate durante il percorso.</p>
+</div>
+<div class="h-px flex-grow bg-slate-200 mx-8 hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Skill Card 1 -->
+<div class="p-6 bg-white border border-slate-200 hover:border-bordeaux-primary transition-colors duration-300 group">
+<span class="material-symbols-outlined text-bordeaux-primary mb-4 block text-[32px]" data-icon="psychology">psychology</span>
+<h4 class="font-headline-md text-headline-md text-text-heading mb-2">Adattabilità</h4>
+<p class="font-body-md text-text-body text-sm">Capacità di inserirsi in un contesto redazionale dinamico e veloce.</p>
+</div>
+<!-- Skill Card 2 -->
+<div class="p-6 bg-white border border-slate-200 hover:border-bordeaux-primary transition-colors duration-300 group">
+<span class="material-symbols-outlined text-bordeaux-primary mb-4 block text-[32px]" data-icon="chat">chat</span>
+<h4 class="font-headline-md text-headline-md text-text-heading mb-2">Comunicazione</h4>
+<p class="font-body-md text-text-body text-sm">Apprendimento delle tecniche di scrittura e diffusione dell'informazione online.</p>
+</div>
+<!-- Skill Card 3 -->
+<div class="p-6 bg-white border border-slate-200 hover:border-bordeaux-primary transition-colors duration-300 group">
+<span class="material-symbols-outlined text-bordeaux-primary mb-4 block text-[32px]" data-icon="search">search</span>
+<h4 class="font-headline-md text-headline-md text-text-heading mb-2">Curiosità</h4>
+<p class="font-body-md text-text-body text-sm">Approfondimento dei meccanismi che regolano un quotidiano digitale.</p>
+</div>
+<!-- Skill Card 4 -->
+<div class="p-6 bg-white border border-slate-200 hover:border-bordeaux-primary transition-colors duration-300 group">
+<span class="material-symbols-outlined text-bordeaux-primary mb-4 block text-[32px]" data-icon="task_alt">task_alt</span>
+<h4 class="font-headline-md text-headline-md text-text-heading mb-2">Precisione</h4>
+<p class="font-body-md text-text-body text-sm">Attenzione ai dettagli nella verifica delle fonti e nella pubblicazione.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-surface-container-low dark:bg-surface-container-highest border-t border-secondary-fixed dark:border-outline-variant">
+<div class="max-w-[1120px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-grid-gutter">
+<div class="flex flex-col gap-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface">Portfolio Tecnico</span>
+<p class="font-body-md text-body-md text-secondary">© 2026 - Progetto Maturità Informatica</p>
+</div>
+<div class="flex gap-8">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-bordeaux-primary transition-colors duration-200 font-label-sm text-label-sm uppercase" href="#">GitHub</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-bordeaux-primary transition-colors duration-200 font-label-sm text-label-sm uppercase" href="#">LinkedIn</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-bordeaux-primary transition-colors duration-200 font-label-sm text-label-sm uppercase" href="#">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple hover effect for skill cards
+        const cards = document.querySelectorAll('.group');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+
+
+</body></html>

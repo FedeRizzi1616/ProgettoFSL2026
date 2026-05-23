@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#ffb3b1",
+                    "secondary-container": "#e0e3e5",
+                    "outline-variant": "#debfbe",
+                    "tertiary-fixed": "#d5e3ff",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-white": "#FFFFFF",
+                    "inverse-on-surface": "#ffedeb",
+                    "secondary": "#5c5f61",
+                    "surface-bright": "#fff8f7",
+                    "primary-container": "#600010",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#410008",
+                    "surface-container-high": "#f9e3e2",
+                    "on-primary-fixed-variant": "#862027",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#a8c8fe",
+                    "primary-fixed-dim": "#ffb3b1",
+                    "on-surface-variant": "#574141",
+                    "text-heading": "#0F172A",
+                    "surface-container-highest": "#f3dedd",
+                    "on-secondary-container": "#626567",
+                    "bordeaux-primary": "#600010",
+                    "surface-variant": "#f3dedd",
+                    "primary-fixed": "#ffdad8",
+                    "surface-muted": "#F8FAFC",
+                    "surface-container": "#ffe9e8",
+                    "tertiary": "#001835",
+                    "on-tertiary-fixed-variant": "#254775",
+                    "background": "#fff8f7",
+                    "error-container": "#ffdad6",
+                    "text-body": "#475569",
+                    "on-primary-container": "#eb6b6d",
+                    "on-secondary-fixed": "#191c1e",
+                    "on-background": "#241918",
+                    "on-surface": "#241918",
+                    "on-secondary": "#ffffff",
+                    "primary": "#390006",
+                    "secondary-fixed-dim": "#c4c7c9",
+                    "surface-tint": "#a6383d",
+                    "secondary-fixed": "#e0e3e5",
+                    "on-secondary-fixed-variant": "#444749",
+                    "surface-container-low": "#fff0ef",
+                    "border-subtle": "#E2E8F0",
+                    "outline": "#8a7170",
+                    "inverse-surface": "#3a2d2d",
+                    "on-tertiary-fixed": "#001b3c",
+                    "on-tertiary-container": "#7595c8",
+                    "surface-dim": "#ead5d4",
+                    "on-primary": "#ffffff",
+                    "surface": "#fff8f7",
+                    "tertiary-container": "#002c59",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "8rem",
+                    "grid-gutter": "1.5rem",
+                    "card-padding": "2rem",
+                    "container-max": "1120px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-md": ["Geist"],
+                    "label-sm": ["Geist"],
+                    "headline-lg": ["Geist"],
+                    "display-hero": ["Geist"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-hero": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f7;
+            color: #241918;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopAppBar Shell -->
+<header class="sticky top-0 w-full z-50 backdrop-blur-md border-b border-secondary-fixed dark:border-outline-variant bg-surface/80">
+<div class="max-w-[1120px] mx-auto px-6 flex justify-between items-center h-20">
+<div class="font-headline-md text-headline-md font-bold text-bordeaux-primary">Portfolio FSL</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-bordeaux-primary font-bold border-b-2 border-bordeaux-primary pb-1 font-label-sm text-label-sm" href="#home">Home</a>
+<a class="text-secondary font-body-md hover:text-bordeaux-primary transition-colors duration-150 font-label-sm text-label-sm" href="#percorso-pcto">Esperienze</a>
+<a class="text-secondary font-body-md hover:text-bordeaux-primary transition-colors duration-150 font-label-sm text-label-sm" href="#competenze">Competenze</a>
+<a class="text-secondary font-body-md hover:text-bordeaux-primary transition-colors duration-150 font-label-sm text-label-sm" href="#contatti">Contatti</a>
+</nav>
+<button class="bg-bordeaux-primary text-on-primary px-6 py-3 font-label-sm text-label-sm rounded hover:opacity-90 transition-all duration-200 scale-95 active:scale-90">
+                Curriculum Vitae
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-[1120px] mx-auto px-6 py-32 md:py-48 grid grid-cols-1 md:grid-cols-2 gap-12 items-center" id="home">
+<div class="flex flex-col items-start">
+<div class="inline-block px-3 py-1 bg-surface-container-low border border-outline-variant text-bordeaux-primary font-label-sm text-label-sm mb-6 rounded-full">
+        Esperienze<span class="" style="letter-spacing: 0.05em;">&nbsp;professionali 2024-2026</span></div>
+<h1 class="font-display-hero text-display-hero text-on-surface max-w-3xl mb-6">Il mio percorso FSL</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mb-10">
+        Specializzato nello sviluppo di architetture software moderne e scalabili. Un approccio metodico e professionale rivolto alla risoluzione di problemi tecnici complessi attraverso il codice.
+    </p>
+<div class="flex gap-4">
+<a class="bg-bordeaux-primary text-on-primary px-8 py-4 font-label-sm text-label-sm rounded flex items-center gap-2 hover:opacity-90 transition-opacity" href="#percorso-pcto">
+            Visualizza Progetti
+            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="border border-outline text-on-surface px-8 py-4 font-label-sm text-label-sm rounded hover:bg-surface-container-low transition-colors" href="#contatti">
+            Contattami
+        </a>
+</div>
+</div>
+<div class="relative flex justify-center md:justify-end">
+<div class="relative w-full max-w-[400px] aspect-square">
+<!-- Decorative Background Element -->
+<div class="absolute -bottom-4 -right-4 w-full h-full border-2 border-bordeaux-primary rounded-2xl z-0"></div>
+<!-- Image Container -->
+<div class="relative w-full h-full bg-surface-container-high rounded-2xl overflow-hidden border border-outline-variant z-10 flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPNkL0Um7ka8q0ucudnh8z2Q1piST44qNvsMp35JR7lUUz5UNageslXPI-lqACvz9jt5hpddNr0XhSQl_rMsKiQwm1U3MU-6qaZqQRY0h9JKrtK3rGaG1nrn6BVD-_GxO4UbKXTbF-O_7_3cLfMLzvSjkhXxsaS-ox_rX6LUkoVD7L2aQL7lSlHO76urPl_x0YXC2a4kNhJ9K97YBsAcfyhdjjTozkNewMxTuyhZfTisW9KQ13U5Eq_xzIXW5wMzFtdZ6VTRZAUx0" class="w-full h-full object-cover" alt="FSL Profile Image"></div>
+</div>
+</div></section>
+<!-- Experience Section -->
+<section class="max-w-[1120px] mx-auto px-6 py-section-gap" id="percorso-pcto">
+<div class="flex flex-col items-start mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Percorso PCTO / FSL</h2>
+<div class="w-12 h-1 bg-bordeaux-primary"></div>
+</div>
+<div class="grid grid-cols-1 gap-grid-gutter">
+<!-- Primary Tier -->
+<div class="bg-surface-container-low border-2 border-bordeaux-primary p-card-padding rounded-xl relative overflow-hidden group">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-bordeaux-primary uppercase tracking-widest block mb-2">Esperienza Principale</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Project Work - Special Olympics</h3>
+</div>
+<span class="text-secondary font-label-sm text-label-sm bg-surface-white px-4 py-2 rounded-full border border-slate-200">Ottobre 2023 - Maggio 2024<br></span>
+</div>
+
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-white border border-slate-200 text-on-surface-variant font-label-sm text-label-sm rounded">Teamworking</span>
+<span class="px-3 py-1 bg-surface-white border border-slate-200 text-on-surface-variant font-label-sm text-label-sm rounded">Comunicazione efficace</span>
+<span class="px-3 py-1 bg-surface-white border border-slate-200 text-on-surface-variant font-label-sm text-label-sm rounded">Intelligenza emotiva</span>
+</div><p class="font-body-md text-body-md text-secondary mt-6 mb-2">Project Work in collaborazione con Special Olypmpics Bergamo e Volley Bergamo 1991, in ambito sociale-sportivo. Durante il PCTO ho svolto attivit di tutoraggio di ragazzi e ragazze con disabilit intellettive, presso la squadra di pallavolo special affiliata a Special Olympics Italia e Volley Bergamo 1991. Durante l'esperienza sono stato affiancato da altri compagni di classe, tutor e allenatrici che collaborano con questo gruppo da diversi anni.</p>
+</div>
+<!-- Secondary Tier -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-grid-gutter">
+<div class="bg-surface-white border border-slate-200 p-card-padding rounded-xl hover:border-bordeaux-primary hover:shadow-sm transition-all duration-300">
+<div class="mb-4">
+<span class="text-bordeaux-primary font-label-sm text-label-sm">1 Settimana-Luglio 2024</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-1">Bergamonews S.R.L.</h4>
+</div>
+<p class="font-body-md text-body-md text-secondary mb-6">PCTO in collaborazione con Bergamonews srl in ambito giornalistico. Durante l'esperienza ho potuto capire come lavora un giornalista, oltre ad apprendere come funziona e come si gestisce un giornale online e la sua redazione. Nel progetto sono stato affiancato dal referente dell'ufficio comunicazione e tutor aziendale Paola Bonaschi oltre che da alcuni giornalisti della redazione di Bergamonews.</p>
+<div class="flex items-center gap-2 text-bordeaux-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+                            Adattabilità</div>
+</div>
+<div class="bg-surface-white border border-slate-200 p-card-padding rounded-xl hover:border-bordeaux-primary hover:shadow-sm transition-all duration-300">
+<div class="mb-4">
+<span class="text-bordeaux-primary font-label-sm text-label-sm">2 Giorni-Giugno 2024</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-1">Politecnico delle Arti di Bergamo</h4>
+</div>
+<p class="font-body-md text-body-md text-secondary mb-6">Workshop in collaborazione con il Politecnico delle Arti di Bergamo e il Conservatorio di Musica G. Donizetti in ambito scolastico-musicale. Durante il PCTO ho potuto approfondire l'argomento dell'informatica musicale e delle tecnologie legate al mondo della musica. Durante l'esperienza sono stato affiancato dal tutor aziendale, il prof. Beppe Bornaghi, e da altri studenti che attendevano il corso.</p>
+<div class="flex items-center gap-2 text-bordeaux-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+                            Creatività e immaginazione</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="bg-surface-container-low py-section-gap" id="competenze">
+<div class="max-w-[1120px] mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Competenze Tecniche</h2>
+<p class="text-secondary font-body-md text-body-md max-w-xl mx-auto">
+                        Le competenze chiave sviluppate ed affinate durante le esperienze FSL/PCTO svolte</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Skill Item -->
+<div class="bg-surface-white p-8 rounded-xl border border-slate-200 flex flex-col items-center justify-center text-center group hover:border-bordeaux-primary transition-colors">
+<div class="w-12 h-12 flex items-center justify-center text-bordeaux-primary mb-4">
+<span class="material-symbols-outlined text-[40px]">groups</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface mb-1">Teamworking</span>
+
+</div>
+<!-- Skill Item -->
+<div class="bg-surface-white p-8 rounded-xl border border-slate-200 flex flex-col items-center justify-center text-center group hover:border-bordeaux-primary transition-colors">
+<div class="w-12 h-12 flex items-center justify-center text-bordeaux-primary mb-4">
+<span class="material-symbols-outlined text-[40px]">forum</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface mb-1">Comunicazione efficace</span>
+
+</div>
+<!-- Skill Item -->
+<div class="bg-surface-white p-8 rounded-xl border border-slate-200 flex flex-col items-center justify-center text-center group hover:border-bordeaux-primary transition-colors">
+<div class="w-12 h-12 flex items-center justify-center text-bordeaux-primary mb-4">
+<span class="material-symbols-outlined text-[40px]">terminal</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface mb-1">Adattabilità</span>
+
+</div>
+<!-- Skill Item -->
+<div class="bg-surface-white p-8 rounded-xl border border-slate-200 flex flex-col items-center justify-center text-center group hover:border-bordeaux-primary transition-colors">
+<div class="w-12 h-12 flex items-center justify-center text-bordeaux-primary mb-4">
+<span class="material-symbols-outlined text-[40px]">palette</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface mb-1">Creatività e immaginazione</span>
+
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Contact Section -->
+<section class="max-w-[1120px] mx-auto px-6 py-section-gap" id="contatti">
+
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-surface-container-low border-t border-secondary-fixed">
+<div class="max-w-[1120px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-grid-gutter">
+<div class="flex flex-col items-center md:items-start">
+<div class="font-headline-md text-headline-md font-bold text-on-surface mb-2">Portfolio FSL</div>
+<p class="text-secondary font-label-sm text-label-sm">© 2026<span style="letter-spacing: 0.05em;" class="">&nbsp;- Progetto Maturità Informatica</span></p>
+</div>
+<div class="flex items-center gap-8">
+<a class="text-secondary hover:text-bordeaux-primary transition-colors duration-200 flex items-center gap-2 font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">link</span>
+                    GitHub
+                </a>
+<a class="text-secondary hover:text-bordeaux-primary transition-colors duration-200 flex items-center gap-2 font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+                    Email
+                </a>
+<a class="text-secondary hover:text-bordeaux-primary transition-colors duration-200 flex items-center gap-2 font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">work</span>
+                    LinkedIn
+                </a>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
